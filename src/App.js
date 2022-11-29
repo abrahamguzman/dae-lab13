@@ -10,22 +10,18 @@ import Users from './components/Users';
 import Contact from './components/Contact';
 import Home from "./components/Home";
 import Notfound from "./components/Notfound";
+import bulma from "bulma/css/bulma.css"
 
 function App() {
   return (
     <Router>
       <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/usuarios">Users</Link>
-        </li>
-        <li>
-          <Link to="/contacto">Contact</Link>
-        </li>
-      </ul>
+        <div className="navbar">
+          <a className="navbar-item"> <Link to="/" className="button is-danger">Home</Link></a>
+          <a className="navbar-item"> <Link to="usuarios" className="button is-light">Users</Link></a>
+          <a className="navbar-item"> <Link to="/contacto" className="button is-info">Contact</Link></a>
+
+        </div>
 
       <hr></hr>
           

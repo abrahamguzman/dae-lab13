@@ -2,7 +2,7 @@ import React from 'react'
 
 class Users extends React.Component {
     render() { 
-        return <h1>Usuarios</h1>
+        return <div className=""><h1>Usuarios</h1></div>
     }
 }
  
